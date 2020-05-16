@@ -1,0 +1,15 @@
+{
+  "name": "POS-updates-notifier",
+  "version": "1.0.0",
+  "description": "Simple webhook to get notifications about new docker images and git repository releases",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0"
+  }
+}

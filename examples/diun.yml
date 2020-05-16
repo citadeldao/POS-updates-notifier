@@ -1,0 +1,19 @@
+db:
+  path: diun.db
+
+watch:
+  workers: 10
+  schedule: "0 * * * * *"
+
+notif:
+  webhook:
+    enable: true
+    endpoint: http://127.0.0.1:8000
+    method: POST
+    headers:
+      Content-Type: application/json
+    timeout: 10
+
+image:
+  - name: docker.io/iconloop/prep-node:latest
+  - name: docker.io/iostio/iost-node:latest
